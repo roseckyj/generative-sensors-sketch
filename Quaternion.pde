@@ -84,7 +84,9 @@ class Quaternion {
     return x * x + y * y + z * z + w * w;
   }
 
-  PMatrix3D toMatrix(PMatrix3D out) {
+  PMatrix3D toMatrix() {
+    PMatrix3D out = new PMatrix3D();
+    
     float x2 = x + x; 
     float y2 = y + y; 
     float z2 = z + z;
